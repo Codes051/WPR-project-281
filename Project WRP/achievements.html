@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Fitness Tracker Web App</title>
+    <title>Smart Fitness Tracker Web App - Achievements</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -25,36 +25,24 @@
             </div>
             <i class="fa fa-navicon" onclick="showMenu()"></i>
         </nav>
-        <h1>Your Achievements And Badges</h1>
-
+        <h1>Your Achievements & Badges</h1>
     </section>
 
- 
     <div class="containerachieve">
         <h1 class="h1achieve">Gamification & User Engagement</h1>
 
         <div class="achievements">
             <h2>Your Achievements</h2>
-            <div class="badge-container">
-                <div class="badge">
-                    <img src="Images/day1.png" alt="First Workout">
-                    <p>First Workout Logged</p>
-                </div>
-                <div class="badge">
-                    <img src="Images/calories.jpg" alt="1000 Calories Burned">
-                    <p>1000 Calories Burned</p>
-                </div>
-                <div class="badge">
-                    <img src="Images/medal.jpg" alt="Half Marathon Completed">
-                    <p>Half Marathon Completed</p>
-                </div>
+            <div class="badge-container" id="badgeContainer">
+               
             </div>
         </div>
 
-
         <div class="countdown-timer">
             <h2>Countdown to Your Challenge</h2>
-            <p id="timerTitle">Marathon Challenge Countdown</p>
+            <p id="timerTitle">Set Your Challenge Date:</p>
+            <input type="date" id="challengeDate">
+            <button onclick="setChallenge()">Start Countdown</button>
             <div class="timer">
                 <span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
             </div>
@@ -62,33 +50,21 @@
         </div>
     </div>
 
-
     <section class="footer">
         <h4>About Us</h4>
         <p>We are a fitness-focused community dedicated to helping individuals of all levels achieve their 
         health and wellness goals. Our mission is to provide cutting-edge fitness tracking tools and personalized 
         insights that keep you motivated and on track.</p>
-            <div class="icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-linkedin"></i>
-
-            </div>
-            <p>Made with <i class="fa fa-heart-o"></i> for fitness lovers</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> for fitness lovers</p>
     </section>
 
-
-    <script>
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-
-    </script>
+    <script src="achievements.js"></script>
 </body>
 </html>
+
