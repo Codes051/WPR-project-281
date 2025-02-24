@@ -29,10 +29,8 @@
     </section>
 
     <section class="blog-content">
-
         <div class="row">
             <div class="blog-left">
-            
                 <img src="Images/fitnessgoal.jpg" alt="">
                 <h2>Achieve Your Fitness Goals with Our Expert Programs</h2>
                 <p>Whether you want to lose weight, gain muscle, or increase flexibility, our goal-based fitness programs help you stay on track and measure your progress. Choose the program that fits your goals and start working towards them today!</p>
@@ -42,43 +40,19 @@
                 <p>With our advanced tracking features, you can monitor everything from your daily activity level to your long-term fitness progress. Stay motivated, challenge yourself, and celebrate every achievement along the way.</p>
                 <br>
                 <p>From cardio to strength training, our goal-setting programs are designed to match your fitness level, so you can work your way up to the next challenge.</p>
-
             </div>
             <div class="blog-right">
                 <h3>Fitness Goal Categories</h3>
-                
-                <div>
-                    <span>Weight Loss</span>
-                    <span>1</span>
-                </div>
-                <div>
-                    <span>Muscle Gain</span>
-                    <span>2</span>
-                </div>
-                <div>
-                    <span>Cardio Endurance</span>
-                    <span>3</span>
-                </div>
-                <div>
-                    <span>Flexibility</span>
-                    <span>4</span>
-                </div>
-                <div>
-                    <span>Strength Training</span>
-                    <span>5</span>
-                </div>
-                <div>
-                    <span>Recovery</span>
-                    <span>6</span>
-                </div>
-                <div>
-                    <span>General Health</span>
-                    <span>7</span>
-                </div>
+                <div><span>Weight Loss</span><span>1</span></div>
+                <div><span>Muscle Gain</span><span>2</span></div>
+                <div><span>Cardio Endurance</span><span>3</span></div>
+                <div><span>Flexibility</span><span>4</span></div>
+                <div><span>Strength Training</span><span>5</span></div>
+                <div><span>Recovery</span><span>6</span></div>
+                <div><span>General Health</span><span>7</span></div>
             </div>
         </div>
     </section>
-
 
     <div class="containergoal">
         <h1 class="h1goal">Fitness Goal Tracking</h1>
@@ -101,18 +75,22 @@
             <div class="goal-info">
                 <p id="goalDisplayName">No goal set yet</p>
                 <p id="goalDisplayTarget">Target: 0</p>
-                <div class="progress-bar">
+                <div class="progress-bar-container">
                     <div id="progress" class="progress"></div>
                 </div>
                 <p id="goalProgressText">Progress: 0%</p>
             </div>
-        </div>
 
+            
+            <div class="progress-update">
+                <input type="number" id="progressInput" placeholder="Enter progress (e.g., 2 miles)">
+                <button onclick="updateProgress()">Update Progress</button>
+            </div>
+        </div>
 
         <div class="motivational-message">
             <p id="message">Keep going, you're doing great!</p>
         </div>
-
     </div>
 
     <section class="footer">
@@ -127,5 +105,8 @@
         <p>Made with <i class="fa fa-heart-o"></i> for fitness lovers</p>
     </section>
 
-    <script>
+    <script src="goal.js"></script>
+</body>
+</html>
+
         var navLinks = document.getElementById("navLinks
